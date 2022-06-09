@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Montserrat:ital,wght@0,200;0,700;1,200;1,300;1,800&family=Roboto+Mono:wght@200&family=Source+Sans+Pro:ital,wght@0,600;0,900;1,900&family=Zen+Maru+Gothic&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+
+div h3 {
+    font-size: 150%;
+    text-align: center;
+}
+
+.wrap {
+    position: relative;
+    height: 100vh;
+    font-family: kokuryu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    font-family: kokuryu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.video-bg {
+    position: relative;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.video-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+}
+
+.video-bg iframe {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 60vw;
+    filter: blur(4px);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.menu {
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.text {
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.news {
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.start {
+    background-color: black;
+    width: 99vw;
+    height: 100vh;
+}
+
+.side-scroll-list-wrapper {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.side-scroll-list {
+    position: absolute;
+    display: flex;
+}
+
+.start {
+    background: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+}
+
+.start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    width: 280px;
+}
+
+footer {
+    font-family: kokuryu, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .title {
+        text-align: center;
+        font-size: 250%;
+    }
+    div h1 {
+        text-align: center;
+        font-size: 250%;
+    }
+    div h3 {
+        font-size: 70%;
+        text-align: center;
+    }
+    .video-bg::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://pbs.twimg.com/profile_images/1528556613258584064/anunqmrW_400x400.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

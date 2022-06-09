@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魔王軒公式サイト</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/owner.png">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'air5ori',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div class="start">
+        <p><img src="https://pbs.twimg.com/profile_images/1528556613258584064/anunqmrW_400x400.jpg"></p>
+    </div>
+    <div id="container">
+        <nav class="flex items-center justify-between flex-wrap bg-white p-6">
+            <div class="flex items-center flex-shrink-0 text-black mr-6">
+                <span class="font-semibold text-xl tracking-tight">魔王軒</span>
+            </div>
+            <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-black">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="#top" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4">Top
+            </a>
+                    <a href="#menu" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4">Menu
+            </a>
+                    <a href="#owner" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4">Owner
+            </a>
+                    <a href="#news" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black mr-4">News
+              </a>
+                </div>
+                <div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="wrap" id="top">
+            <div class="video-bg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FI3nQVW1gBk?start=673&autoplay=1&mute=1&playsinline=1&loop=1&playlist=FI3nQVW1gBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> </div>
+            <div class="content">
+                <div class="container">
+                    <h1 class="title">
+                        ラーメン魔王軒
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <div class="menu" style="padding-top: 20vh;">
+            <h1 class="menutext" id="menu">メニュー</h1>
+            <div class="px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+                <div class="flex flex-wrap -m-1 md:-m-2 gallery">
+                    <div class="flex flex-wrap w-1/3 menus">
+                        <div class="w-full p-3 md:p-2 transform transition duration-500 hover:scale-105 sm:hover:scale-120">
+                            <img alt="gallery" class="block object-cover object-center  rounded-lg" src="../img/otokado-ruki.png">
+                            <h3>オトカド＝ルキ</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3 ">
+                        <div class="w-full p-3 md:p-2 transform transition duration-500 hover:scale-105">
+                            <img alt="gallery" class="block object-cover object-center  rounded-lg" src="../img/airu.png">
+                            <h3>あいるラブまおうラーメン</h3>
+
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3">
+                        <div class="w-full p-3 md:p-2 transform transition duration-500 hover:scale-105">
+                            <img alt="gallery" class="block object-cover object-center  rounded-lg" src="../img/kohaku.png">
+                            <h3>KOHACAT</h3>
+
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/3">
+                        <div class="w-full p-3 md:p-2 transform transition duration-500 hover:scale-105">
+                            <img alt="gallery" class="block object-cover object-center  rounded-lg" src="../img/kokuderuki.png">
+                            <h3>コクデルキ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex" style="padding-top: 20vh;">
+            <img src="../img/owner.png" style="padding-left: 3vw;" class="owner">
+            <div class="text" style="padding-left: 3vw;">
+                <h1 id="owner">店主</h1>
+                <h3>トゥルシー・ナイトメア・マッドネス・4世 (100017)</h3>
+            </div>
+        </div>
+
+        <div class="news" style="padding-top: 20vh;">
+            <h1 id="news">お知らせ</h1>
+            <div>
+                <div class="bg-white overflow-hidden border-b-4 border-blue-500 md:w-1/3" style="margin: 0 auto;">
+                    <div class="p-4 md:p-6">
+                        <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
+                        <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">魔王軒開店</h3>
+                        <div class="text-sm flex items-center">
+                            <svg class="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+                      <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
+                      <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
+                    </svg>
+                            <p class="leading-none">2022.6.6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden border-b-4 border-blue-500 md:w-1/3" style="margin: 0 auto;">
+                    <div class="p-4 md:p-6">
+                        <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
+                        <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">第2回 初めての大会　優勝</h3>
+                        <div class="text-sm flex items-center">
+                            <svg class="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+                      <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
+                      <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
+                    </svg>
+                            <p class="leading-none">2022.6.6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white overflow-hidden border-b-4 border-blue-500 md:w-1/3" style="margin: 0 auto;">
+                    <div class="p-4 md:p-6">
+                        <p class="text-blue-500 font-semibold text-xs mb-1 leading-none">News</p>
+                        <h3 class="font-semibold mb-2 text-xl leading-tight sm:leading-normal">公式サイト開設</h3>
+                        <div class="text-sm flex items-center">
+                            <svg class="opacity-75 mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="12" height="12" viewBox="0 0 97.16 97.16" style="enable-background:new 0 0 97.16 97.16;" xml:space="preserve">
+                      <path d="M48.58,0C21.793,0,0,21.793,0,48.58s21.793,48.58,48.58,48.58s48.58-21.793,48.58-48.58S75.367,0,48.58,0z M48.58,86.823    c-21.087,0-38.244-17.155-38.244-38.243S27.493,10.337,48.58,10.337S86.824,27.492,86.824,48.58S69.667,86.823,48.58,86.823z"/>
+                      <path d="M73.898,47.08H52.066V20.83c0-2.209-1.791-4-4-4c-2.209,0-4,1.791-4,4v30.25c0,2.209,1.791,4,4,4h25.832    c2.209,0,4-1.791,4-4S76.107,47.08,73.898,47.08z"/>
+                    </svg>
+                            <p class="leading-none">2022.6.9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800" style="padding-top: 20vh;">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">ラーメン魔王軒
+    </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#top" class="mr-4 hover:underline md:mr-6 ">Top</a>
+                </li>
+                <li>
+                    <a href="#menu" class="mr-4 hover:underline md:mr-6">Menu</a>
+                </li>
+                <li>
+                    <a href="#owner" class="mr-4 hover:underline md:mr-6">Owner</a>
+                </li>
+                <li>
+                    <a href="#news" class="hover:underline">News</a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+    <script>
+        const tl = gsap.timeline();
+        tl.from(".video-bg", {
+            xPercent: -100
+        })
+
+        tl.from(".menu", {
+            xPercent: 20
+        })
+        tl.from(".owner", {
+            yPercent: -30
+        })
+
+
+        ScrollTrigger.create({
+            animation: tl,
+            trigger: ".wrapper",
+            start: "top",
+            scrub: 2,
+            pin: true,
+            anticipatePin: 1,
+        });
+
+
+        $(function() {
+            setTimeout(function() {
+                $('.start p').fadeIn(500);
+            }, 200);
+            setTimeout(function() {
+                $('.start').fadeOut(1000);
+            }, 2000);
+        });
+    </script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
